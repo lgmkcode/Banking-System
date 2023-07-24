@@ -5,8 +5,8 @@ using namespace std;
 
 int main(){
 
-account deneme1;
-deneme1.open_acc();
+account account1;
+account1.open_acc();
 int a = 0;
 
 while(a != 5){
@@ -24,16 +24,16 @@ while(a != 5){
     }
 */
     if(a == 1){
-        deneme1.scan_acc();
+        account1.scan_acc();
     }
     else if(a == 2){
-        deneme1.get_deposit();
+        account1.get_deposit();
     }
     else if(a == 3){
-        deneme1.get_withdraw();
+        account1.get_withdraw();
     }
     else if(a == 4){
-        deneme1.get_balance();
+        account1.get_balance();
     }
     else if(a == 5){
          break;
