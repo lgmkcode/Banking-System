@@ -11,7 +11,7 @@ class account{
         int balance;
 
     public:
-        account(); //constuructor
+        account(); //constructor
         void open_acc();
         void scan_acc();
         void get_balance();
