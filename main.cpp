@@ -19,28 +19,26 @@ while(aim != 5){
 
     cin >> aim;
 /*
-    if(a == 1){
-        deneme1.open_acc();
+        case 1: deneme1.open_acc();
+            break
     }
 */
-    if(aim == 1){
-        account1.scan_acc();
+    switch(aim){
+        case 1: account1.scan_acc();
+            break;
+        case 2: account1.get_deposit();
+            break;
+        case 3: account1.get_withdraw();
+            break;
+        case 4: account1.get_balance();
+            break;
+        case 5: // exit
+            break;
+        default: cout << "incorrect entry!" << endl;
+            break;
+
     }
-    else if(aim == 2){
-        account1.get_deposit();
-    }
-    else if(aim == 3){
-        account1.get_withdraw();
-    }
-    else if(aim == 4){
-        account1.get_balance();
-    }
-    else if(aim == 5){
-         break;
-    }
-    else{
-         cout << "incorrect entry!" << endl;
-    }
+
 }
 
 return 0;
