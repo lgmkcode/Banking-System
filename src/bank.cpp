@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "bank.h"
+#include <fstream>
 
 account::account(){ //constructor
     balance = 0;
@@ -49,5 +50,17 @@ void account::get_withdraw(){
     }
     else{
         balance -= tmp;
+    }
+}
+
+void account::write_data(){
+    ofstream file;
+    file.open("data/account-data.txt",ios::app);
+    if(file.is_open()){
+        file << id << " " << name << " " << surname << " " << date << " " << balance << password <<"\n";
+        file.close();
+    }
+    else{
+        cout << "file could not be opened!" << endl;
     }
 }

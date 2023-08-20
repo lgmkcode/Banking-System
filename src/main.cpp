@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "bank.h"
+#include <fstream>
 using namespace std;
 
 int main(){
@@ -8,7 +9,6 @@ int main(){
 account account1;
 account1.open_acc();
 int aim = 0;
-
 while(aim != 5){
 
     cout << "=====================================" << endl;
@@ -38,8 +38,7 @@ while(aim != 5){
             break;
 
     }
-
 }
-
+account1.write_data();
 return 0;
 }

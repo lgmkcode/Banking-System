@@ -9,6 +9,7 @@ class account{
         string date;
         int id;
         int balance;
+        int password;
 
     public:
         account(); //constructor
@@ -17,4 +18,5 @@ class account{
         void get_balance();
         void get_deposit();
         void get_withdraw();
+        void write_data();
 };
